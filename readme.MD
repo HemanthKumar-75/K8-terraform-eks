@@ -1,1 +1,1 @@
-![alt text](AWS-EKS-Expense.drawio.html)
+![alt text](AWS-EKS-Expense.svg)
