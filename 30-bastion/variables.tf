@@ -1,5 +1,5 @@
 variable "project" {
-  default = "expense"
+  default = "Expense-EKS"
 }
 
 variable "envinronment" {
@@ -8,7 +8,7 @@ variable "envinronment" {
 
 variable "common_tags" {
   default = {
-    project = "Expense"
+    project = "Expense-EKS"
     envinronment = "dev"
     Terraform = true
     created-by = "HemanthKumar"

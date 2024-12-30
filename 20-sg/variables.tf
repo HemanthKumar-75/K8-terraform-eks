@@ -1,5 +1,5 @@
 variable "project" {
-  default = "expense"
+  default = "Expense-EKS"
 }
 
 variable "envinronment" {
@@ -8,7 +8,7 @@ variable "envinronment" {
 
 variable "common_tags" {
   default = {
-    project = "Expense"
+    project = "Expense-EKS"
     envinronment = "dev"
     Terraform = true
     created-by = "HemanthKumar"
@@ -21,39 +21,39 @@ variable "sg_tags" {
   }
 }
 
-variable "vpc_tags" {
-  default = {
-    number-of-subnets = 2
-  }
-}
+# variable "vpc_tags" {
+#   default = {
+#     number-of-subnets = 2
+#   }
+# }
 
-variable "public_subnet_cidrblocks" {
-  default = ["10.0.1.0/24", "10.0.2.0/24"]
-}
+# variable "public_subnet_cidrblocks" {
+#   default = ["10.0.1.0/24", "10.0.2.0/24"]
+# }
 
-variable "private_subnet_cidrblocks" {
-  default = ["10.0.11.0/24", "10.0.12.0/24"]
-}
+# variable "private_subnet_cidrblocks" {
+#   default = ["10.0.11.0/24", "10.0.12.0/24"]
+# }
 
-variable "database_subnet_cidrblocks" {
-  default = ["10.0.21.0/24", "10.0.22.0/24"]
-}
+# variable "database_subnet_cidrblocks" {
+#   default = ["10.0.21.0/24", "10.0.22.0/24"]
+# }
 
-variable "is_peering_required" {
-  default = true
-}
+# variable "is_peering_required" {
+#   default = false
+# }
 
-variable "backend_sg_tags" {
-  default = {
-    component = "Backend"
-  }
-}
+# variable "backend_sg_tags" {
+#   default = {
+#     component = "Backend"
+#   }
+# }
 
-variable "frontend_sg_tags" {
-  default = {
-    component = "Frontend"
-  }
-}
+# variable "frontend_sg_tags" {
+#   default = {
+#     component = "Frontend"
+#   }
+# }
 
 variable "bastion_sg_tags" {
   default = {
@@ -61,12 +61,12 @@ variable "bastion_sg_tags" {
   }
 }
 
-variable "ansible_sg_tags" {
-  default = {
-    component = "ansible"
-    description = "for connection to other servers"
-  }
-}
+# variable "ansible_sg_tags" {
+#   default = {
+#     component = "ansible"
+#     description = "for connection to other servers"
+#   }
+# }
 
 variable "app_alb_sg_tags" {
   default = {
